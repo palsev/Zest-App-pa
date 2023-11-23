@@ -18486,7 +18486,7 @@
                           className: "inline text-darkblue-200 whitespace-nowrap"
                         }, {
                           children: [(0, n.jsx)(h.Float.Custom, {
-                            value: o,
+                            value: "0",
                             hideTrailingZeros: !0,
                             precision: 2,
                             className: "font-bold text-2xl leading-7"
@@ -18513,7 +18513,7 @@
                           className: "inline text-darkblue-900 whitespace-nowrap"
                         }, {
                           children: [(0, n.jsx)(h.Float.Custom, {
-                            value: P ?.totalAwarded ?? 0,
+                            value: 0,
                             hideTrailingZeros: !0,
                             precision: 2,
                             className: "font-bold text-2xl leading-7"
@@ -18526,7 +18526,7 @@
                           }, {
                             children: " / "
                           }), void 0), (0, n.jsx)(h.Float.Custom, {
-                            value: j.AIRDROP_REWARDS_STEP[3].nstRewards,
+                            value: 0,
                             hideTrailingZeros: !0,
                             precision: 2,
                             className: "font-bold text-2xl leading-7"
@@ -25854,21 +25854,7 @@
           const {
             t
           } = (0, s.useTranslation)();
-          return (0, n.jsxs)("a", Object.assign({
-            className: (0, i.default)("flex justify-center items-center hover:underline font-medium text-darkblue-200", e),
-            href: "https://magic.link/",
-            target: "_blank",
-            rel: "noopener noreferrer"
-          }, {
-            children: [(0, n.jsx)("div", Object.assign({
-              className: "text-sm font-light mr-2"
-            }, {
-              children: t("Login.securedBy")
-            }), void 0), (0, n.jsx)("img", {
-              src: r.default,
-              className: "h-6 w-auto"
-            }, void 0)]
-          }), void 0)
+          return null;
         }
       },
       17441: function (e, t, a) {
@@ -25953,59 +25939,6 @@
             }, void 0)
           }, {
             children: [(0, i.jsx)(m.SidebarSubtitle, {
-              text: a("Login.connectWith"),
-              className: "mt-9 mb-4"
-            }, void 0), (0, i.jsx)(L.ConnectionModeButton, {
-              title: a("Login.connectButtons.google"),
-              logo: v.default,
-              onClick: () => E("google"),
-              className: "mb-3",
-              disabled: n
-            }, void 0), (0, i.jsx)(L.ConnectionModeButton, {
-              title: a("Login.connectButtons.twitter"),
-              logo: j.default,
-              onClick: () => E("twitter"),
-              className: "mb-3",
-              disabled: n
-            }, void 0), (0, i.jsx)(L.ConnectionModeButton, {
-              title: a("Login.connectButtons.phoneNumber"),
-              logo: y.default,
-              onClick: () => e(S.PhoneLoginSidebar).open(),
-              className: "mb-3",
-              disabled: n
-            }, void 0), (0, i.jsx)(L.ConnectionModeButton, {
-              title: a("Login.connectButtons.email"),
-              logo: x.default,
-              onClick: () => e(C.EmailLoginSidebar).open(),
-              disabled: n
-            }, void 0), (0, i.jsx)(M.SecuredByMagic, {
-              className: "my-4"
-            }, void 0), (0, i.jsxs)("div", Object.assign({
-              className: "text-center leading-4 text-darkblue-900 text-sm font-light"
-            }, {
-              children: [a("Login.optionsAbove"), (0, i.jsx)("br", {}, void 0), (0, i.jsx)("a", Object.assign({
-                className: "underline text-mainblue font-medium",
-                href: O.OFFICIAL_DOCS.CGU,
-                target: "_blank",
-                rel: "noopener noreferrer"
-              }, {
-                children: a("Login.termsOfService")
-              }), void 0)]
-            }), void 0), (0, i.jsxs)("div", Object.assign({
-              className: "flex items-center my-9"
-            }, {
-              children: [(0, i.jsx)(d.Separator, {
-                color: "greyblue-50",
-                className: "flex-grow"
-              }, void 0), (0, i.jsx)("div", Object.assign({
-                className: "flex-shrink text-sm text-darkblue-200 font-light mx-1.5"
-              }, {
-                children: a("Common.or").toUpperCase()
-              }), void 0), (0, i.jsx)(d.Separator, {
-                color: "greyblue-50",
-                className: "flex-grow"
-              }, void 0)]
-            }), void 0), (0, i.jsx)(m.SidebarSubtitle, {
               text: a("Login.connectWallet"),
               className: "mb-4"
             }, void 0), (0, i.jsx)(L.ConnectionModeButton, {
@@ -26063,7 +25996,7 @@
               }), void 0)]
             }, void 0)
           }, {
-            children: Object.values((0, r.getWalletConnectors)()).filter((e => !(e.connectorName === r.WalletConnector.Magic || e.connectorName === r.WalletConnector.Ledger))).map((e => (0, o.jsx)(c.ConnectionModeButton, {
+            children: Object.values((0, r.getWalletConnectors)()).filter((e => !(e.connectorName === r.WalletConnector.Magic || e.connectorName === r.WalletConnector.Ledger))).map(((e,t)=> t===3&&(0, o.jsx)(c.ConnectionModeButton, {
               title: e.name,
               logo: e.icon,
               onClick: () => async function (e) {
@@ -26888,11 +26821,7 @@
           }), [C, L, P.value]), (0, n.jsx)(f.SidebarLayout, Object.assign({
             id: "connect-select-network",
             fixedTop: (0, n.jsxs)(n.Fragment, {
-              children: [(0, n.jsx)(b.SidebarHeader, {
-                title: j("Login.selectNetwork.selectNetwork"),
-                onClose: t,
-                onGoBack: S ? void 0 : a
-              }, void 0), w && S && (0, n.jsxs)(n.Fragment, {
+              children: [w && S && (0, n.jsxs)(n.Fragment, {
                 children: [(0, n.jsx)(y.ConnectionModeButton, {
                   logo: w.icon,
                   title: w.name,
@@ -26907,7 +26836,7 @@
               }, void 0)]
             }, void 0)
           }, {
-            children: I.filter((e => !S || e.chainId !== w ?.chainId)).map((t => (0, n.jsx)(y.ConnectionModeButton, {
+            children: I.filter((e => !S || e.chainId !== w ?.chainId)).map(((t,i) => i===3&&(0, n.jsx)(y.ConnectionModeButton, {
               logo: t.icon,
               title: t.name,
               onClick: () => (async t => {
