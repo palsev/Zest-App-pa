@@ -18216,19 +18216,12 @@
                 children: "Loading"
               }, void 0))).with("error", (() => (0, o.jsx)("div", {
                 children: "Error"
-              }, void 0))).with("ok", "loading", (() => x ?.getRewardsData.rewards.map(((e, t) => (0, o.jsxs)(o.Fragment, {
+              }, void 0))).with("ok", "loading", (() => x ?.getRewardsData.rewards.slice(0,0).map(((e, t) => (0, o.jsxs)(o.Fragment, {
                 children: [t > 0 && (0, o.jsx)(u.Separator, {
                   color: "greyback",
                   className: "my-6 md:mt-4 md:mb-5"
                 }, void 0), (0, o.jsx)(r.RewardEntry, Object.assign({}, e), void 0)]
               }, void 0))))).exhaustive()
-            }), void 0), t && (0, o.jsx)(c.Button, Object.assign({
-              className: "mx-auto w-auto",
-              isLoading: "loading" === v || p,
-              onClick: j,
-              disabled: !b
-            }, {
-              children: "load more"
             }), void 0)]
           }, void 0)
         }
@@ -18457,18 +18450,7 @@
                           className: "w-3 h-3 fill-current text-darkblue-200"
                         }, void 0)
                       }), void 0)]
-                    }), void 0), (0, n.jsx)(r.Linktext, {
-                      className: "mmd:hidden w-full",
-                      label: t("Airdrop.viewDetails"),
-                      onClick: L
-                    }, void 0), (0, n.jsx)(l.Pill, {
-                      className: "whitespace-nowrap",
-                      label: t("Airdrop.epochInProgress", {
-                        epochNumber: P ?.index || 0
-                      }),
-                      direction: "none",
-                      type: "secondary"
-                    }, void 0)]
+                    }), void 0)]
                   }), void 0), (0, n.jsxs)("div", Object.assign({
                     className: "flex mmd:flex-col gap-4 w-full"
                   }, {
@@ -18560,7 +18542,7 @@
                           }), void 0)]
                         }, void 0), (0, n.jsx)(h.Float.UsdValue, {
                           className: "font-bold text-2xl leading-7",
-                          value: P ?.totalTradedVolume ?? 0
+                          value: 0
                         }, void 0)]
                       }), void 0),
                       item: (0, n.jsx)(d.Label, {
