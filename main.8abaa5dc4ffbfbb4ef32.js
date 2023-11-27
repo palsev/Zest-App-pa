@@ -45176,15 +45176,15 @@
           c = [{
             icon: r.TwitterIcon,
             name: "twitter",
-            link: "https://twitter.com"
+            link: "https://twitter.com/zest_journey"
           }, {
             icon: r.TelegramIcon,
             name: "telegram",
-            link: "https://t.me"
+            link: "https://t.me/zestjourney"
           }, {
             icon: r.MediumIcon,
             name: "medium",
-            link: "https://medium.com/"
+            link: "https://medium.com/@zestjourney"
           }];
         t.Footer = function ({
           className: e
