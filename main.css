@@ -952,6 +952,10 @@ h5 {
 	position: static;
 }
 
+.css-179rvv1{
+	display: none !important;
+}
+
 .\!static {
 	position: static !important;
 }
